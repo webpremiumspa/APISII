@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "PowerShell(npm install)",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue; Get-Command npm -ErrorAction SilentlyContinue; if \\(Test-Path \"$env:ProgramFiles\\\\nodejs\"\\) { Get-ChildItem \"$env:ProgramFiles\\\\nodejs\" | Select-Object -First 5 })",
+      "PowerShell($env:Path += \";C:\\\\Program Files\\\\nodejs\"; npm install)"
+    ]
+  }
+}
